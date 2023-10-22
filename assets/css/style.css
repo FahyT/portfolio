@@ -1,0 +1,50 @@
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+  --fun-blue: #173E92;
+  --chamois: #eae7ae;
+  --mustard: #fee556;
+  --milano-red: #b20808;
+}
+
+* {
+  box-sizing: border-box;
+  background-color:var(--chamois);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+header {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+header h1 {
+  width: 25%;
+  font-weight: 500;
+  color: var(--fun-blue);
+}
+
+nav {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--fun-blue);
+  padding: 20px;
+  font-size: 18px;
+}
