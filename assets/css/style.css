@@ -18,10 +18,7 @@ body {
   line-height: 1.5;
 }
 
-
-
 /* Navigation CSS */
-/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 header {
   display: flex;
   flex-direction: row;
@@ -47,4 +44,49 @@ nav a {
   color: var(--fun-blue);
   padding: 20px;
   font-size: 18px;
+}
+
+/* Grid CSS */
+
+#page-wrapper {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 90vh;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+  "aboutHeader about"
+  "workHeader work"
+  "contactHeader contact";
+}
+
+#aboutHeader {
+  grid-area: aboutHeader;
+  background-color: green 
+}
+
+#about {
+  grid-area: about;
+  background-color: blue  
+}
+
+#workHeader {
+  grid-area: workHeader;
+  background-color: yellow; 
+}
+
+#work {
+  grid-area: work;
+  background-color: black;  
+}
+
+#contactHeader {
+  grid-area: contactHeader;
+  background-color:red; 
+}
+
+#contact {
+  grid-area: contact;
+  background-color: purple;
 }
