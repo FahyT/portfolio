@@ -23,12 +23,13 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0px 5%;
-  height: 5em;
+  height: 4em;
   
 }
 
 header h1 {
   width: 25%;
+  display: flex;
   font-weight: 500;
   color: var(--fun-blue);
   align-items: center;
@@ -143,11 +144,15 @@ nav a {
 #work a {
   display: flex;
   border: 5px solid var(--fun-blue);
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #app1 {
   grid-area: app1;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-portfolio-4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -170,7 +175,7 @@ nav a {
 
 #app4 {
   grid-area: app4;
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/02-portfolio-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
  
@@ -184,5 +189,11 @@ nav a {
 
 }
 
-
+.app-header {
+  text-decoration: none;
+  color: var(--chamois);
+  background-color:var(--fun-blue);
+  padding: 20px;
+  font-size: 30px;
+}
 
