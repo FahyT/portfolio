@@ -8,7 +8,6 @@
 
 * {
   box-sizing: border-box;
-  background-color:var(--chamois);
 }
 
 body {
@@ -16,6 +15,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color:var(--chamois);
 }
 
 /* Navigation CSS */
@@ -23,12 +23,16 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0px 5%;
+  height: 5em;
+  
 }
 
 header h1 {
   width: 25%;
   font-weight: 500;
   color: var(--fun-blue);
+  align-items: center;
+  
 }
 
 nav {
@@ -46,7 +50,35 @@ nav a {
   font-size: 18px;
 }
 
-/* Grid CSS */
+/* Hero CSS */
+
+.hero-banner{
+  min-height: 500px;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url(../images/nordwood-themes-EZSm8xRjnX0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% 100%;
+}
+
+.intro-summary {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  display: flex;
+  width: 50%;
+  background-image: url(../images/AvatarMaker.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+/* Main Page Grid CSS */
 
 #page-wrapper {
   margin: 0px 5%;
@@ -68,25 +100,58 @@ nav a {
 
 #about {
   grid-area: about;
-  background-color: blue  
 }
 
 #workHeader {
   grid-area: workHeader;
-  background-color: yellow; 
 }
 
 #work {
   grid-area: work;
-  background-color: black;  
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "app1 app1"
+  "app2 app3"
+  "app4 app5";
 }
 
 #contactHeader {
   grid-area: contactHeader;
-  background-color:red; 
 }
 
 #contact {
   grid-area: contact;
-  background-color: purple;
 }
+
+
+/* Application Display Grid CSS */
+
+#work a {
+  /* turn anchor into a block so it can have images etc. */
+  display: block;
+}
+
+#app1 {
+  grid-area: app1;
+}
+
+#app2 {
+  grid-area: app2;
+}
+
+#app3 {
+  grid-area: app3;
+}
+
+#app4 {
+  grid-area: app4;
+}
+
+#app5 {
+  grid-area: app5;
+}
+
+
+
