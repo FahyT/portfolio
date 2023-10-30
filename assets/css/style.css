@@ -66,17 +66,9 @@ nav a {
 
 .intro-summary {
   display: flex;
-  width: 50%;
+  width: 80%;
   align-items: center;
-  justify-content: center;
-}
-
-.avatar {
-  display: flex;
-  width: 50%;
-  background-image: url(../images/AvatarMaker.png);
-  background-repeat: no-repeat;
-  background-position: cover;
+  justify-content: flex-end;
 }
 
 /* Main Page Grid CSS */
@@ -102,6 +94,8 @@ nav a {
 #about {
   grid-area: about;
   padding-left: 4%;
+  color: var(--fun-blue);
+  font-size: 20px;
 }
 
 #workHeader {
@@ -128,6 +122,9 @@ nav a {
 
 #contact {
   grid-area: contact;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .grid-header {
@@ -137,6 +134,12 @@ nav a {
   color:#173E92;
   text-align:right;
   padding: 12px;
+}
+
+.contact-details {
+  color:var(--fun-blue);
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 /* Application Display Grid CSS */
