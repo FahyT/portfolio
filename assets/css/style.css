@@ -83,10 +83,11 @@ nav a {
 #page-wrapper {
   margin: 0px 5%;
   display: grid;
+  row-gap: 40px;
   min-height: 500px;
-  height: 90vh;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-columns: 1fr 3fr;
+  padding: 15px;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 8fr;
   grid-template-areas:
   "aboutHeader about"
   "workHeader work"
@@ -95,11 +96,11 @@ nav a {
 
 #aboutHeader {
   grid-area: aboutHeader;
-  background-color: green 
 }
 
 #about {
   grid-area: about;
+  padding-left: 4%;
 }
 
 #workHeader {
@@ -108,7 +109,9 @@ nav a {
 
 #work {
   grid-area: work;
+  padding-left: 4%;
   display: grid;
+  gap: 10px;
   grid-template-rows: 3fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -119,38 +122,66 @@ nav a {
 
 #contactHeader {
   grid-area: contactHeader;
+  
 }
 
 #contact {
   grid-area: contact;
 }
 
+.grid-header {
+  border-right: 5px solid var(--fun-blue);
+  font-size: 50px;
+  text-decoration: none;
+  color:#173E92;
+  text-align:right;
+  padding: 12px;
+}
 
 /* Application Display Grid CSS */
 
 #work a {
-  /* turn anchor into a block so it can have images etc. */
-  display: block;
+  display: flex;
+  border: 5px solid var(--fun-blue);
 }
 
 #app1 {
   grid-area: app1;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #app2 {
   grid-area: app2;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 #app3 {
   grid-area: app3;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 #app4 {
   grid-area: app4;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
 }
 
 #app5 {
   grid-area: app5;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 
