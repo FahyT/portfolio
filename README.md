@@ -9,7 +9,7 @@ A link to the website can be found here: https://fahyt.github.io/portfolio/
 
 ## Installation
 
-THe project is a static webpage hosted on Github Pages so no installation is required apart from a web browser of your choice.
+The project is a static webpage hosted on Github Pages so no installation is required apart from a web browser of your choice.
 
 
 ## Usage 
