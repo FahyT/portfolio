@@ -5,39 +5,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <title>Tom Fahy // Web Developer</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1>Tom Fahy</h1>
     <nav>
+      <a href="#about">About</a>
+      <a href="#work">My work</a>
+      <a href="#contact">Contact me</a>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+    <div class="intro-summary">
+      <h2>I'm <div class="highlight">Tom</div>, a web developer from London.</h2>
     </div>
   </section>
 
-  <main class="page-wrapper">
+  <main id="page-wrapper">
     <!-- about me -->
+    <div id="aboutHeader" class="grid-header">About Me</div>
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <p>I have only just started on my web development journey, so follow along as I build up my
+      knowledge and develop some new applications. You can see these below (with some placeholders
+      currently).</p>
+
+      <p>If you have any questions feel free to reach out to me. </p>
     </section>
 
     <!-- portfolio container -->
+    <div id="workHeader" class="grid-header">Work</div>
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <!--complicated grid thing goes here-->
+      <a href="https://fahyt.github.io/horiseon-web-services/" id="app1"><div class="app-header">Horiseon</div></a>
+      <a href="" id="app2"><div class="app-header">App 2</div></a>
+      <a href="" id="app3"><div class="app-header">App 3</div></a>
+      <a href="" id="app4"><div class="app-header">App 4</div></a>
+      <a href="" id="app5"><div class="app-header">App 5</div></a>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <div id="contactHeader" class="grid-header">Contact Me</div>
+    <section class="page-section" id="contact">
+      <div class="contact-details"> 555.5555.555</div>
+      <div class="contact-details"> <a href="mailto: thomas.fahy9@gmail.com">thomas.fahy9@gmail.com</a></div>
+      <div class="contact-details"> <a href="https://github.com/FahyT"> GitHub </a> </div>
     </section>
   </main>
 </body>

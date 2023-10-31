@@ -1,0 +1,224 @@
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+  --fun-blue: #173E92;
+  --chamois: #eae7ae;
+  --mustard: #fee556;
+  --milano-red: #b20808;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color:var(--chamois);
+}
+
+/* Navigation CSS */
+header {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+  height: 4em;
+  
+}
+
+header h1 {
+  width: 25%;
+  display: flex;
+  font-weight: 500;
+  color: var(--fun-blue);
+  align-items: center;
+  
+}
+
+nav {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--fun-blue);
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* Hero CSS */
+
+.hero-banner{
+  min-height: 500px;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url(../images/nordwood-themes-EZSm8xRjnX0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% 100%;
+}
+
+.intro-summary {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.highlight {
+  color: var(--milano-red);
+  display: inline;
+}
+
+h2 {
+  color: var(--fun-blue);
+}
+
+/* Main Page Grid CSS */
+
+#page-wrapper {
+  margin: 0px 5%;
+  display: grid;
+  row-gap: 40px;
+  min-height: 500px;
+  padding: 15px;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 8fr;
+  grid-template-areas:
+  "aboutHeader about"
+  "workHeader work"
+  "contactHeader contact";
+}
+
+#aboutHeader {
+  grid-area: aboutHeader;
+}
+
+#about {
+  grid-area: about;
+  padding-left: 4%;
+  color: var(--fun-blue);
+  font-size: 20px;
+}
+
+#workHeader {
+  grid-area: workHeader;
+}
+
+#work {
+  grid-area: work;
+  padding-left: 4%;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "app1 app1"
+  "app2 app3"
+  "app4 app5";
+}
+
+@media only screen and (max-width: 600px) {
+  #work {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "app1"
+      "app2"
+      "app3"
+      "app4"
+      "app5"
+      ;
+  }
+
+#contactHeader {
+  grid-area: contactHeader;
+  
+}
+
+#contact {
+  grid-area: contact;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid-header {
+  border-right: 5px solid var(--fun-blue);
+  font-size: 50px;
+  text-decoration: none;
+  color:#173E92;
+  text-align:right;
+  padding: 12px;
+}
+
+.contact-details {
+  color:var(--fun-blue);
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+/* Application Display Grid CSS */
+
+#work a {
+  display: flex;
+  border: 5px solid var(--fun-blue);
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#app1 {
+  grid-area: app1;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#app2 {
+  grid-area: app2;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#app3 {
+  grid-area: app3;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+#app4 {
+  grid-area: app4;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+#app5 {
+  grid-area: app5;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.app-header {
+  text-decoration: none;
+  color: var(--chamois);
+  background-color:var(--fun-blue);
+  padding: 20px;
+  font-size: 30px;
+}
+
