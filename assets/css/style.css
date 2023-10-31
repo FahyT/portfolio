@@ -124,6 +124,19 @@ h2 {
   "app4 app5";
 }
 
+@media only screen and (max-width: 600px) {
+  #work {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "app1"
+      "app2"
+      "app3"
+      "app4"
+      "app5"
+      ;
+  }
+
 #contactHeader {
   grid-area: contactHeader;
   
